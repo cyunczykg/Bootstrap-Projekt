@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 //toggle burger shadow on burger click
 const b = document.querySelector('.navbar-toggler');
 
-// function toggleshadow() {
-// 	n.classList.toggle('shadow-bg-bar');
-// }
+function toggleshadow() {
+	n.classList.toggle('shadow-bg-bar');
+}
 // b.addEventListener('click', toggleshadow);
 
 //alternate way using arrow function
@@ -47,7 +47,5 @@ const navList = document.querySelector('.navbar-collapse');
 //alternative way -> foreach metchod with inside function
 allNavLinks.forEach((item) => {
 	item.addEventListener('click', () => navList.classList.remove('show'));
-	// item.addEventListener('click', toggleshadow);
-	// alternate way using arrow function
-	item.addEventListener('click', () => n.classList.toggle('shadow-bg-bar'));
+	item.addEventListener('click', toggleshadow);
 });

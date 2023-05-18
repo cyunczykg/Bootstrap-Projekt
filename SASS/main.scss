@@ -192,13 +192,60 @@ header {
 
 .prices {
 	background-color: rgb(248, 249, 250);
-	.btn-primary {
-		background-color: $main-color;
-		border-color: $main-color;
+	.underline {
+		margin: 0 auto 20px;
 	}
-	.btn-primary:hover {
-		background-color: rgb(13, 110, 253);
-		border-color: rgb(13, 110, 253);
+	.price-box {
+		background-color: $white-color;
+		margin-top: 20px;
+		padding: 18px;
+		box-shadow: 3px 3px 3px black;
+		transition: box-shadow 0.3s;
+		transition: scale 0.3s;
+		h3 {
+			color: $main-color;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+		i {
+			padding-left: 2px;
+		}
+		span {
+			font-weight: bold;
+		}
+		.price-tag {
+			font-weight: bolder;
+			font-size: 18px;
+		}
+		.btn {
+			padding: 10px 15px;
+			text-transform: uppercase;
+			box-shadow: 1px 1px 1px black;
+			transition: box-shadow 0.3s;
+		}
+		.btn:hover {
+			box-shadow: 2px 2px 2px black;
+			transition: box-shadow 0.3s;
+		}
+		.btn-primary {
+			background-color: $main-color;
+			border-color: $main-color;
+		}
+		.btn-primary:hover {
+			background-color: rgb(13, 110, 253);
+			border-color: rgb(13, 110, 253);
+		}
+	}
+	.price-box:hover {
+		box-shadow: 8px 8px 8px black;
+		transform: scale(1.03);
+	}
+	.price-info {
+		margin-top: 20px;
+		a {
+			text-decoration: none;
+			color: $main-color;
+		}
 	}
 }
 
@@ -267,6 +314,11 @@ header {
 				background-color: rgba(0, 0, 0, 0.7);
 				z-index: 1;
 			}
+		}
+	}
+	.prices {
+		.price-info {
+			font-size: 18px;
 		}
 	}
 }
