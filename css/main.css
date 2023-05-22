@@ -288,6 +288,20 @@ header .arrow-down .fa-chevron-down {
   height: 160px;
 }
 
+.achievements i {
+  padding: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px #000000;
+}
+.achievements .achievement-number {
+  font-size: 22px;
+}
+.achievements .achievement-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
