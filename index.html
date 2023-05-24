@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/07289e1d7a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/contact.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" rootMargin="72px 0 0 0">
@@ -32,7 +31,7 @@
                     <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#prices">ceny</a>
                     <a class="nav-link" href="#team">zespół</a>
-                    <a class="nav-link" href="#achievments">osiągnięcia</a>
+                    <a class="nav-link" href="#achievements">osiągnięcia</a>
                     <a class="nav-link" href="#contact">kontakt</a>
                 </div>
             </div>
@@ -354,7 +353,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="contact pb-5">
+    <section id="contact" class="contact py-5 bg-dark">
         <h2>kontakt</h2>
         <div class="underline"></div>
         <div class="contact-shadow"></div>
@@ -363,15 +362,16 @@
                 <div class="col-sm-6 col-lg-4 contact-entry order-1">
                     <div class="contact-name">
                         <div class="contact-address">
-                            <h3>główna siedziba</h3>
+                            <h4>główna siedziba</h4>
                             <p>ul. Długa 0</p>
                             <p>00-000 Kraków</p>
-                            <p>+48 000 000 000</p>
+                            <p>+44 000 000 000</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 order-0 order-lg-1 bg-dark">
+                <div class="contact-social col-lg-4 order-0 order-lg-1">
                     <div class="social-text">
+                        <h4>social media</h4>
                         <p><a href="#"><i class="fa-brands fa-square-facebook"></i></a>
 
                             <a href="https://github.com/cyunczykg" target="_blank" rel="noopener noreferrer"><i
@@ -383,15 +383,93 @@
                 <div class="col-sm-6 col-lg-4 contact-entry order-1">
                     <div class="contact-name">
                         <div class="contact-address">
-                            <h3>siedziba w londku</h3>
-                            <p>000-000 Królewska</p>
-                            <p>Londek 000 000</p>
+                            <h4>siedziba w Lądku Zdrój</h4>
+                            <p>ul.Królewska</p>
+                            <p>19-999 Lądek Zdrój</p>
                             <p>+48 20 0000 0000</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="c-form col-12 py-5 text-center justify-content-evenly">
+            <div class="mb-4 c-form">
+                <div id="mapdiv" class="mapdiv col-12 text-center rounded"></div>
+                <!--Section heading-->
+                <h3 class="h1-responsive font-weight-bold text-center mt-4">Napisz do nas</h3>
+                <div class="underline"></div>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">Masz pytania? Skontaktuj się z nami bezpośrednio. Nasz
+                    zespół w ciągu
+                    kilku godzin odpowie na Twoje zgłoszenie.</p>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mailto:youraddr@domain.tld" method="GET">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Twoje imię</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Twój e-mail</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Temat wiadomoś</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Twoja wiadomość</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                </div>
             </div>
         </div>
     </section>
@@ -401,6 +479,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/slicksettings.js"></script>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
+    <script type="text/javascript" src="./js/validation.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 

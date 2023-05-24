@@ -312,6 +312,49 @@ header {
 	}
 }
 
+.contact {
+	position: relative;
+	color: $white-color;
+	background-image: url(../img/skyline-1869214_1920.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	z-index: 1;
+	.contact-social {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.social-text {
+			font-size: 26px;
+			a {
+				padding: 5px;
+				color: $white-color;
+			}
+			a:hover {
+				color: $main-color;
+			}
+		}
+	}
+	#mapdiv {
+		height: 300px;
+	}
+	h3,
+	h4 {
+		text-transform: uppercase;
+	}
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+}
+
 #formcontact {
 	textarea {
 		width: 100%;
