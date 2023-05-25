@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'animations';
 
 *,
 *::before,
@@ -97,6 +98,7 @@ header {
 		background-color: rgba($color: #000000, $alpha: 0.5);
 	}
 	.arrow-down {
+		display: block;
 		position: relative;
 		.fa-chevron-down {
 			position: absolute;
@@ -126,7 +128,7 @@ header {
 		z-index: 1;
 	}
 	.aboutus-hover {
-		transition: color 0.3s;
+		// transition: color 0.3s; aoc compatibility animation fix
 		z-index: 1;
 	}
 	.aboutus-hover:hover {
@@ -171,7 +173,7 @@ header {
 		z-index: 0;
 	}
 	.games-hero-item {
-		transition: color 0.3s;
+		// transition: color 0.3s; aos fix
 		z-index: 0;
 	}
 	.games-hero-item:hover {
@@ -200,8 +202,8 @@ header {
 		margin-top: 20px;
 		padding: 18px;
 		box-shadow: 3px 3px 3px black;
-		transition: box-shadow 0.3s;
-		transition: scale 0.3s;
+		// transition: box-shadow 0.3s;
+		// transition: scale 0.3s;
 		h3 {
 			color: $main-color;
 			text-transform: uppercase;
