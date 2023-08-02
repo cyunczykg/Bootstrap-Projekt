@@ -248,7 +248,7 @@ header .arrow-down .fa-chevron-down {
   font-size: 18px;
 }
 .prices .price-box .btn {
-  padding: 10px 15px;
+  padding: 10px 20px;
   text-transform: uppercase;
   box-shadow: 1px 1px 1px black;
   transition: box-shadow 0.3s;
@@ -381,7 +381,7 @@ header .arrow-down .fa-chevron-down {
 }
 
 #formcontact textarea {
-  width: 100%;
+  resize: vertical;
   height: 8rem;
   margin: 20px 0 0 0;
 }
