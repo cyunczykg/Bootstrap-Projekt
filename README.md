@@ -13,7 +13,8 @@ Project is created with:
 * slick-carousel version: 1.8.1
 * aos version: 2.3.1
 * fontawesome version: 6.4.0
-* animista version: 2023-5-25
+* animista
+* formsubmit.io 
 	
 ## Setup
 To run this project go to github page:
