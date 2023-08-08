@@ -3,13 +3,13 @@ function validateForm() {
 	var name = document.getElementById('name').value;
 	if (name == '') {
 		document.querySelector('.status').innerHTML =
-			'Pole Twoje imię nie może być puste';
+			'Pole Imię nie może być puste';
 		return false;
 	}
 	var email = document.getElementById('email').value;
 	if (email == '') {
 		document.querySelector('.status').innerHTML =
-			'Pole E-mail kontaktowy nie może być puste';
+			'Pole E-mail nie może być puste';
 		return false;
 	} else {
 		var re =
@@ -23,25 +23,16 @@ function validateForm() {
 	var subject = document.getElementById('subject').value;
 	if (subject == '') {
 		document.querySelector('.status').innerHTML =
-			'Temat wiadomości nie może być pusty';
+			'Pole Temat nie może być puste';
 		return false;
 	}
 	var message = document.getElementById('message').value;
 	if (message == '') {
 		document.querySelector('.status').innerHTML =
-			'Pole Treść wiadomości nie może być puste';
+			'Pole Wiadomość nie może być puste';
 		return false;
 	}
 	document.querySelector('.status').innerHTML = 'Wysyłam...';
-	var link = 
-		'https://formsubmit.io/send/e9481fd1-9846-44cf-ab1d-b16a4c95c611?cc=' +
-		email +
-		'&' +
-		'subject=' +
-		subject +
-		'&body=' +
-		message +
-		'%0D%0A%0D%0A' +
-		name;
-	window.location.href = link;
+	var form = document.getElementById('contact-form');
+	form.dispatchEvent(new Event('submit'));
 }
