@@ -34,7 +34,7 @@ function validateForm() {
 	}
 	document.querySelector('.status').innerHTML = 'Wysyłam...';
 	var link =
-		'mailto:cyunczykg@gmail.com?cc=' +
+		'https://formsubmit.io/send/e9481fd1-9846-44cf-ab1d-b16a4c95c611?cc=' +
 		email +
 		'&' +
 		'subject=' +
