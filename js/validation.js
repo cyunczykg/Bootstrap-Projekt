@@ -34,7 +34,7 @@ function validateForm() {
 	}
 	document.querySelector('.status').innerHTML = 'Wysyłam...';
 	var link =
-		'mailto:someone@example.com?cc=' +
+		'mailto:cyunczykg@gmail.com?cc=' +
 		email +
 		'&' +
 		'subject=' +
