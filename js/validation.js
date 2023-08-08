@@ -32,7 +32,7 @@ function validateForm() {
 			'Pole Wiadomość nie może być puste';
 		return false;
 	}
-	document.querySelector('.status').innerHTML = 'Wysyłam...';
+	document.querySelector('.status').innerHTML = 'Wiadomość wysłano. Wkrótce się z Tobą skontaktuję.';
 	var form = document.getElementById('contact-form');
 	form.dispatchEvent(new Event('submit'));
 }
