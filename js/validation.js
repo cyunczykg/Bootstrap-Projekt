@@ -33,15 +33,16 @@ function validateForm() {
 		return false;
 	}
 	document.querySelector('.status').innerHTML = 'Wysyłam...';
-	var link =
-		'https://formsubmit.io/send/e9481fd1-9846-44cf-ab1d-b16a4c95c611?cc=' +
-		email +
-		'&' +
-		'subject=' +
-		subject +
-		'&body=' +
-		message +
-		'%0D%0A%0D%0A' +
-		name;
+	var link = 'https://formsubmit.io/send/e9481fd1-9846-44cf-ab1d-b16a4c95c611';
+	// var link = 
+	// 	'https://formsubmit.io/send/e9481fd1-9846-44cf-ab1d-b16a4c95c611?cc=' +
+	// 	email +
+	// 	'&' +
+	// 	'subject=' +
+	// 	subject +
+	// 	'&body=' +
+	// 	message +
+	// 	'%0D%0A%0D%0A' +
+	// 	name;
 	window.location.href = link;
 }
